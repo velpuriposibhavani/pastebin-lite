@@ -1,4 +1,4 @@
-import { redis, getCurrentTime } from '@/app/lib/redis';
+import { redis } from "@/lib/redis"
 import { notFound } from 'next/navigation';
 import { headers } from 'next/headers';
 
