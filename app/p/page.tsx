@@ -1,4 +1,4 @@
-import { redis } from "@/lib/redis"
+import { redis, getCurrentTime } from "@/lib/redis"; // ఇక్కడ getCurrentTime యాడ్ చేయండి
 import { notFound } from 'next/navigation';
 import { headers } from 'next/headers';
 

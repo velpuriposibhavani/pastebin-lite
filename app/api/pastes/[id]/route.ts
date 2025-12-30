@@ -1,5 +1,5 @@
-import { redis } from "@/lib/redis"
 import { NextResponse } from 'next/server';
+import { redis, getCurrentTime } from "@/lib/redis"; 
 
 export async function GET(req: Request, { params }: { params: { id: string } }) {
   const paste: any = await redis.hgetall(`paste:${params.id}`);
